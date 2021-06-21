@@ -8,13 +8,13 @@ b) If passed a string, return the string “ARRR!”
 c) Be sure to test your function before moving on the next part. */
 //TRIED TO MAKE THIS FUNCTION WITHOUT NAMING IT
 let timesThree = function(n) {
-  if (typeof(n) === NaN) {
+  if (typeof(n) !== Number) {
   console.log("ARRR");
   } else {
    return n * 3;
   }
  };
-console.log(timesThree("dude"));
+console.log(timesThree(4));
 
 /* Use your fuction and the map method to change an array  as follows:
 a) Triple any the numbers.
