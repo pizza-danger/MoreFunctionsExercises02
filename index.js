@@ -7,14 +7,14 @@ b) If passed a string, return the string “ARRR!”
 c) Be sure to test your function before moving on the next part. */
 //TRIED TO MAKE THIS FUNCTION WITHOUT NAMING IT
 
-// let timesThree = function(n) {
-//   if (typeof(n) !== Number) {
-//   console.log("ARRR");
-//   } else {
-//    return n * 3;
-//   }
-//  };
-//console.log(timesThree(4));
+let timesThree = function(n) {
+  if (typeof(n) !== "number") {
+    return "ARRR";
+  } else {
+   return n * 3;
+  }
+ };
+
 
 
 /* Use your fuction and the map method to change an array  as follows:
@@ -25,15 +25,8 @@ c) Print the new array to confirm your work.
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
 
-let tripled = arr.map(function (n) {
-  if (typeof(n) !== Number) {
-  console.log("ARRR");
-  } else {
-   return n * 3;
-  }
-});
 
-//let tripled = arr.map(timesThree);
+let tripled = arr.map(timesThree)
 
 console.log(arr);
 
